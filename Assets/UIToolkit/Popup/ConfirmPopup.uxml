@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="/Assets/UIToolkit/Popup/Popup.uss" />
+    <ui:VisualElement name="confirm-popup" class="popup">
+        <ui:VisualElement class="popup-panel">
+            <ui:Label name="message-label" text="" class="popup-message" />
+            <ui:Button name="close-button" text="X" class="popup-close-button" />
+            <ui:VisualElement class="popup-button-row">
+                <ui:Button name="confirm-button" text="확인" class="popup-button" />
+                <ui:Button name="cancel-button" text="취소" class="popup-button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

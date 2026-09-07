@@ -1,0 +1,85 @@
+.kw-button {
+    -unity-text-align: middle-center;
+    height: 350px;
+    width: 600px;
+    opacity: 1;
+    border-width: 0;
+    -unity-font-definition: url("project://database/Assets/Fonts/BMJUA_otf.otf?fileID=12800000&guid=5e3d8c9224831014c9c346b3f94ba075&type=3#BMJUA_otf");
+    color: rgba(255, 255, 255, 0.89);
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 120px;
+    background-image: url("project://database/Assets/Sprites/Button.png?fileID=2800000&guid=79372b97a43cd954f8cc8685303c4146&type=3#Button");
+    -unity-background-image-tint-color: rgb(80, 88, 127);
+    -unity-background-scale-mode: stretch-to-fill;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+}
+
+.kw-button:hover {
+    scale: 1.2 1.2;
+}
+
+.kw-button:active {
+}
+
+.main-root {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(41, 46, 68);
+    align-items: center;
+    justify-content: center;
+}
+
+.main-title {
+    position: absolute;
+    top: 315px;
+    left: 0;
+    right: 0;
+    font-size: 200px;
+    color: rgb(255, 255, 255);
+    -unity-text-align: upper-center;
+    -unity-font-definition: url("project://database/Assets/Fonts/BMJUA_otf.otf?fileID=12800000&guid=5e3d8c9224831014c9c346b3f94ba075&type=3#BMJUA_otf");
+}
+
+.main-button-group {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+.main-button-row {
+    width: 600px;
+    height: 350px;
+    position: relative;
+}
+
+.main-button-row--spaced {
+    margin-bottom: 200px;
+}
+
+.kw-tutorial-badge {
+    position: absolute;
+    right: -170px;
+    top: 115px;
+    width: 120px;
+    height: 120px;
+    border-width: 0;
+    border-radius: 24px;
+    background-color: rgb(80, 88, 127);
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    -unity-text-align: middle-center;
+    -unity-font-definition: url("project://database/Assets/Fonts/BMJUA_otf.otf?fileID=12800000&guid=5e3d8c9224831014c9c346b3f94ba075&type=3#BMJUA_otf");
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+}
+
+.kw-tutorial-badge:hover {
+    scale: 1.1 1.1;
+}

@@ -1,0 +1,212 @@
+.stats-root {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(41, 46, 68);
+}
+
+.stats-back-button {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    width: 120px;
+    height: 120px;
+    border-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("project://database/Assets/Sprites/BackButton.png?fileID=21300000&guid=03ddcfbe92632704d81e9614ce789f10&type=3#BackButton");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.stats-back-button:hover {
+    scale: 1.1 1.1;
+}
+
+.stats-title {
+    position: absolute;
+    top: 175px;
+    left: 0;
+    right: 0;
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    -unity-text-align: upper-center;
+    -unity-font-definition: url("project://database/Assets/Fonts/BMJUA_otf.otf?fileID=12800000&guid=5e3d8c9224831014c9c346b3f94ba075&type=3#BMJUA_otf");
+}
+
+.stats-content {
+    position: absolute;
+    top: 329px;
+    left: 0;
+    right: 0;
+    align-items: center;
+}
+
+.stats-header {
+    flex-direction: row;
+    width: 1000px;
+    height: 100px;
+}
+
+.stats-tab-button {
+    flex-grow: 1;
+    height: 100px;
+    margin: 0;
+    border-width: 0;
+    background-color: rgb(92, 98, 128);
+    color: rgb(50, 50, 50);
+    font-size: 49px;
+    -unity-text-align: middle-center;
+    -unity-font-definition: url("project://database/Assets/Fonts/BMJUA_otf.otf?fileID=12800000&guid=5e3d8c9224831014c9c346b3f94ba075&type=3#BMJUA_otf");
+}
+
+.stats-tab-button--active {
+    background-color: rgb(255, 255, 255);
+}
+
+.stats-panel {
+    width: 800px;
+    margin-top: 70px;
+}
+
+.stats-chip {
+    align-self: flex-start;
+    background-color: rgb(80, 88, 127);
+    padding: 20px 24px;
+}
+
+.stats-chip-label {
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+    -unity-font-definition: url("project://database/Assets/Fonts/BMJUA_otf.otf?fileID=12800000&guid=5e3d8c9224831014c9c346b3f94ba075&type=3#BMJUA_otf");
+}
+
+.stats-box {
+    width: 800px;
+    background-color: rgb(92, 98, 128);
+}
+
+.stats-overall-row {
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+    padding-left: 20px;
+}
+
+.stats-overall-label {
+    width: 250px;
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+    -unity-font-definition: url("project://database/Assets/Fonts/BMJUA_otf.otf?fileID=12800000&guid=5e3d8c9224831014c9c346b3f94ba075&type=3#BMJUA_otf");
+}
+
+.stats-overall-value {
+    width: 200px;
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+    -unity-font-definition: url("project://database/Assets/Fonts/BMJUA_otf.otf?fileID=12800000&guid=5e3d8c9224831014c9c346b3f94ba075&type=3#BMJUA_otf");
+}
+
+.bar-graph {
+    height: 500px;
+    padding: 15px 20px;
+    justify-content: space-evenly;
+}
+
+.bar-row {
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+}
+
+.bar-row-label {
+    width: 64px;
+    color: rgb(220, 220, 220);
+    font-size: 20px;
+}
+
+.bar-track {
+    flex-grow: 1;
+    height: 24px;
+    background-color: rgb(64, 70, 98);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.bar-fill {
+    width: 0%;
+    height: 100%;
+    background-color: rgb(51, 153, 255);
+    border-radius: 12px;
+}
+
+.bar-row-count {
+    width: 48px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    -unity-text-align: middle-right;
+}
+
+.stage-stat-list {
+    height: 400px;
+    padding: 12px;
+    justify-content: space-evenly;
+}
+
+.stage-stat-row {
+    flex-direction: row;
+    align-items: center;
+}
+
+.stage-stat-name {
+    width: 90px;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    -unity-font-definition: url("project://database/Assets/Fonts/BMJUA_otf.otf?fileID=12800000&guid=5e3d8c9224831014c9c346b3f94ba075&type=3#BMJUA_otf");
+}
+
+.stage-stat-track {
+    flex-grow: 1;
+    height: 20px;
+    background-color: rgb(64, 70, 98);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.stage-stat-fill {
+    width: 0%;
+    height: 100%;
+    background-color: rgb(76, 200, 120);
+    border-radius: 10px;
+}
+
+.stage-stat-progress {
+    width: 110px;
+    color: rgb(220, 220, 220);
+    font-size: 18px;
+    -unity-text-align: middle-right;
+}
+
+.stage-stat-rate {
+    width: 70px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    -unity-text-align: middle-right;
+}
+
+.stats-reset-button {
+    width: 320px;
+    height: 80px;
+    margin-top: 70px;
+    border-width: 0;
+    background-color: rgb(255, 255, 255);
+    color: rgb(50, 50, 50);
+    font-size: 49px;
+    -unity-text-align: middle-center;
+    -unity-font-definition: url("project://database/Assets/Fonts/BMJUA_otf.otf?fileID=12800000&guid=5e3d8c9224831014c9c346b3f94ba075&type=3#BMJUA_otf");
+}

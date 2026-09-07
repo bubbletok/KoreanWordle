@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UIToolkit/KW_USS.uss?fileID=7433441132597879392&amp;guid=faf45a542bfdc514d82eaf26f25de37d&amp;type=3#KW_USS" />
+    <ui:VisualElement name="main-root" class="main-root" style="top: -2px;">
+        <ui:Label text="한글 워들" name="main-title" class="main-title" style="top: 200px;" />
+        <ui:VisualElement name="main-button-group" class="main-button-group">
+            <ui:VisualElement name="blocked-row" class="main-button-row main-button-row--spaced">
+                <ui:Button text="모아쓰기" name="blocked-button" class="kw-button" />
+                <ui:Button text="?" name="blocked-tutorial-button" class="kw-tutorial-badge" />
+            </ui:VisualElement>
+            <ui:VisualElement name="deblocked-row" class="main-button-row main-button-row--spaced">
+                <ui:Button text="풀어쓰기" name="deblocked-button" class="kw-button" />
+                <ui:Button text="?" name="deblocked-tutorial-button" class="kw-tutorial-badge" />
+            </ui:VisualElement>
+            <ui:VisualElement name="statistics-row" class="main-button-row">
+                <ui:Button text="통계" name="statistics-button" class="kw-button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

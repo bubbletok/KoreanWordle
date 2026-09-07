@@ -1,0 +1,62 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="/Assets/UIToolkit/Gameplay/Gameplay.uss" />
+    <Style src="/Assets/UIToolkit/Gameplay/GameplayCellState.uss" />
+    <ui:VisualElement name="gameplay-root" class="gameplay-root">
+        <ui:Button name="back-button" class="gameplay-back-button" />
+        <ui:Button name="help-button" text="?" class="gameplay-help-button" />
+        <ui:Label name="title-label" text="" class="gameplay-title" />
+        <ui:Label name="subtitle-label" text="" class="gameplay-subtitle" />
+        <ui:VisualElement name="cell-grid" class="cell-grid" />
+
+        <ui:VisualElement name="keyboard" class="keyboard">
+            <ui:VisualElement class="keyboard-row">
+                <ui:Button name="key-capstop-0" class="key key-char" />
+                <ui:Button name="key-capstop-1" class="key key-char" />
+                <ui:Button name="key-capstop-2" class="key key-char" />
+                <ui:Button name="key-capstop-3" class="key key-char" />
+                <ui:Button name="key-capstop-4" class="key key-char" />
+                <ui:Button name="key-capstop-5" class="key key-char" />
+                <ui:Button name="key-capstop-6" class="key key-char" />
+                <ui:Button name="key-capstop-7" class="key key-char" />
+                <ui:Button name="key-capstop-8" class="key key-char" />
+                <ui:Button name="key-capstop-9" class="key key-char" />
+
+                <ui:Button name="key-top-0" class="key key-char" />
+                <ui:Button name="key-top-1" class="key key-char" />
+                <ui:Button name="key-top-2" class="key key-char" />
+                <ui:Button name="key-top-3" class="key key-char" />
+                <ui:Button name="key-top-4" class="key key-char" />
+                <ui:Button name="key-top-5" class="key key-char" />
+                <ui:Button name="key-top-6" class="key key-char" />
+                <ui:Button name="key-top-7" class="key key-char" />
+                <ui:Button name="key-top-8" class="key key-char" />
+                <ui:Button name="key-top-9" class="key key-char" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="keyboard-row">
+                <ui:Button name="key-mid-0" class="key key-char" />
+                <ui:Button name="key-mid-1" class="key key-char" />
+                <ui:Button name="key-mid-2" class="key key-char" />
+                <ui:Button name="key-mid-3" class="key key-char" />
+                <ui:Button name="key-mid-4" class="key key-char" />
+                <ui:Button name="key-mid-5" class="key key-char" />
+                <ui:Button name="key-mid-6" class="key key-char" />
+                <ui:Button name="key-mid-7" class="key key-char" />
+                <ui:Button name="key-mid-8" class="key key-char" />
+                <ui:Button name="key-backspace" text="&lt;-" class="key key-action" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="keyboard-row">
+                <ui:Button name="key-caps" text="CAPS" class="key key-action" />
+                <ui:Button name="key-bottom-0" class="key key-char" />
+                <ui:Button name="key-bottom-1" class="key key-char" />
+                <ui:Button name="key-bottom-2" class="key key-char" />
+                <ui:Button name="key-bottom-3" class="key key-char" />
+                <ui:Button name="key-bottom-4" class="key key-char" />
+                <ui:Button name="key-bottom-5" class="key key-char" />
+                <ui:Button name="key-bottom-6" class="key key-char" />
+                <ui:Button name="key-enter" text="입력" class="key key-enter" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

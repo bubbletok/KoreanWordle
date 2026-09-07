@@ -1,0 +1,223 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="/Assets/UIToolkit/Stage/StageSelect.uss" />
+    <Style src="/Assets/UIToolkit/Stage/StageCellStar.uss" />
+    <ui:VisualElement name="stage-select-root" class="stage-select-root">
+        <ui:Button name="back-button" text="" class="stage-back-button" />
+        <ui:Label name="stage-title" text="한글 워들" class="stage-title" />
+        <ui:Label name="stage-subtitle" text="모아쓰기" class="stage-subtitle" />
+        <ui:VisualElement name="stage-grid-wrapper" class="stage-grid-wrapper">
+        <ui:VisualElement class="stage-select-row">
+            <ui:VisualElement name="stage-cell-0" class="stage-cell">
+                <ui:VisualElement name="stage-cell-0-tab" class="stage-cell-stars">
+                    <ui:VisualElement name="stage-cell-0-star-0" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-0-star-1" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-0-star-2" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-0-star-3" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-0-star-4" class="stage-star" />
+                </ui:VisualElement>
+                <ui:Label name="stage-cell-0-number" text="1" class="stage-cell-number" />
+            </ui:VisualElement>
+            <ui:VisualElement name="stage-cell-1" class="stage-cell">
+                <ui:VisualElement name="stage-cell-1-tab" class="stage-cell-stars">
+                    <ui:VisualElement name="stage-cell-1-star-0" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-1-star-1" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-1-star-2" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-1-star-3" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-1-star-4" class="stage-star" />
+                </ui:VisualElement>
+                <ui:Label name="stage-cell-1-number" text="2" class="stage-cell-number" />
+            </ui:VisualElement>
+            <ui:VisualElement name="stage-cell-2" class="stage-cell">
+                <ui:VisualElement name="stage-cell-2-tab" class="stage-cell-stars">
+                    <ui:VisualElement name="stage-cell-2-star-0" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-2-star-1" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-2-star-2" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-2-star-3" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-2-star-4" class="stage-star" />
+                </ui:VisualElement>
+                <ui:Label name="stage-cell-2-number" text="3" class="stage-cell-number" />
+            </ui:VisualElement>
+            <ui:VisualElement name="stage-cell-3" class="stage-cell">
+                <ui:VisualElement name="stage-cell-3-tab" class="stage-cell-stars">
+                    <ui:VisualElement name="stage-cell-3-star-0" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-3-star-1" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-3-star-2" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-3-star-3" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-3-star-4" class="stage-star" />
+                </ui:VisualElement>
+                <ui:Label name="stage-cell-3-number" text="4" class="stage-cell-number" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="stage-select-row">
+            <ui:VisualElement name="stage-cell-4" class="stage-cell">
+                <ui:VisualElement name="stage-cell-4-tab" class="stage-cell-stars">
+                    <ui:VisualElement name="stage-cell-4-star-0" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-4-star-1" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-4-star-2" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-4-star-3" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-4-star-4" class="stage-star" />
+                </ui:VisualElement>
+                <ui:Label name="stage-cell-4-number" text="5" class="stage-cell-number" />
+            </ui:VisualElement>
+            <ui:VisualElement name="stage-cell-5" class="stage-cell">
+                <ui:VisualElement name="stage-cell-5-tab" class="stage-cell-stars">
+                    <ui:VisualElement name="stage-cell-5-star-0" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-5-star-1" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-5-star-2" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-5-star-3" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-5-star-4" class="stage-star" />
+                </ui:VisualElement>
+                <ui:Label name="stage-cell-5-number" text="6" class="stage-cell-number" />
+            </ui:VisualElement>
+            <ui:VisualElement name="stage-cell-6" class="stage-cell">
+                <ui:VisualElement name="stage-cell-6-tab" class="stage-cell-stars">
+                    <ui:VisualElement name="stage-cell-6-star-0" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-6-star-1" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-6-star-2" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-6-star-3" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-6-star-4" class="stage-star" />
+                </ui:VisualElement>
+                <ui:Label name="stage-cell-6-number" text="7" class="stage-cell-number" />
+            </ui:VisualElement>
+            <ui:VisualElement name="stage-cell-7" class="stage-cell">
+                <ui:VisualElement name="stage-cell-7-tab" class="stage-cell-stars">
+                    <ui:VisualElement name="stage-cell-7-star-0" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-7-star-1" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-7-star-2" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-7-star-3" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-7-star-4" class="stage-star" />
+                </ui:VisualElement>
+                <ui:Label name="stage-cell-7-number" text="8" class="stage-cell-number" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="stage-select-row">
+            <ui:VisualElement name="stage-cell-8" class="stage-cell">
+                <ui:VisualElement name="stage-cell-8-tab" class="stage-cell-stars">
+                    <ui:VisualElement name="stage-cell-8-star-0" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-8-star-1" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-8-star-2" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-8-star-3" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-8-star-4" class="stage-star" />
+                </ui:VisualElement>
+                <ui:Label name="stage-cell-8-number" text="9" class="stage-cell-number" />
+            </ui:VisualElement>
+            <ui:VisualElement name="stage-cell-9" class="stage-cell">
+                <ui:VisualElement name="stage-cell-9-tab" class="stage-cell-stars">
+                    <ui:VisualElement name="stage-cell-9-star-0" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-9-star-1" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-9-star-2" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-9-star-3" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-9-star-4" class="stage-star" />
+                </ui:VisualElement>
+                <ui:Label name="stage-cell-9-number" text="10" class="stage-cell-number" />
+            </ui:VisualElement>
+            <ui:VisualElement name="stage-cell-10" class="stage-cell">
+                <ui:VisualElement name="stage-cell-10-tab" class="stage-cell-stars">
+                    <ui:VisualElement name="stage-cell-10-star-0" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-10-star-1" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-10-star-2" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-10-star-3" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-10-star-4" class="stage-star" />
+                </ui:VisualElement>
+                <ui:Label name="stage-cell-10-number" text="11" class="stage-cell-number" />
+            </ui:VisualElement>
+            <ui:VisualElement name="stage-cell-11" class="stage-cell">
+                <ui:VisualElement name="stage-cell-11-tab" class="stage-cell-stars">
+                    <ui:VisualElement name="stage-cell-11-star-0" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-11-star-1" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-11-star-2" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-11-star-3" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-11-star-4" class="stage-star" />
+                </ui:VisualElement>
+                <ui:Label name="stage-cell-11-number" text="12" class="stage-cell-number" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="stage-select-row">
+            <ui:VisualElement name="stage-cell-12" class="stage-cell">
+                <ui:VisualElement name="stage-cell-12-tab" class="stage-cell-stars">
+                    <ui:VisualElement name="stage-cell-12-star-0" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-12-star-1" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-12-star-2" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-12-star-3" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-12-star-4" class="stage-star" />
+                </ui:VisualElement>
+                <ui:Label name="stage-cell-12-number" text="13" class="stage-cell-number" />
+            </ui:VisualElement>
+            <ui:VisualElement name="stage-cell-13" class="stage-cell">
+                <ui:VisualElement name="stage-cell-13-tab" class="stage-cell-stars">
+                    <ui:VisualElement name="stage-cell-13-star-0" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-13-star-1" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-13-star-2" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-13-star-3" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-13-star-4" class="stage-star" />
+                </ui:VisualElement>
+                <ui:Label name="stage-cell-13-number" text="14" class="stage-cell-number" />
+            </ui:VisualElement>
+            <ui:VisualElement name="stage-cell-14" class="stage-cell">
+                <ui:VisualElement name="stage-cell-14-tab" class="stage-cell-stars">
+                    <ui:VisualElement name="stage-cell-14-star-0" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-14-star-1" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-14-star-2" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-14-star-3" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-14-star-4" class="stage-star" />
+                </ui:VisualElement>
+                <ui:Label name="stage-cell-14-number" text="15" class="stage-cell-number" />
+            </ui:VisualElement>
+            <ui:VisualElement name="stage-cell-15" class="stage-cell">
+                <ui:VisualElement name="stage-cell-15-tab" class="stage-cell-stars">
+                    <ui:VisualElement name="stage-cell-15-star-0" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-15-star-1" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-15-star-2" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-15-star-3" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-15-star-4" class="stage-star" />
+                </ui:VisualElement>
+                <ui:Label name="stage-cell-15-number" text="16" class="stage-cell-number" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="stage-select-row">
+            <ui:VisualElement name="stage-cell-16" class="stage-cell">
+                <ui:VisualElement name="stage-cell-16-tab" class="stage-cell-stars">
+                    <ui:VisualElement name="stage-cell-16-star-0" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-16-star-1" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-16-star-2" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-16-star-3" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-16-star-4" class="stage-star" />
+                </ui:VisualElement>
+                <ui:Label name="stage-cell-16-number" text="17" class="stage-cell-number" />
+            </ui:VisualElement>
+            <ui:VisualElement name="stage-cell-17" class="stage-cell">
+                <ui:VisualElement name="stage-cell-17-tab" class="stage-cell-stars">
+                    <ui:VisualElement name="stage-cell-17-star-0" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-17-star-1" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-17-star-2" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-17-star-3" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-17-star-4" class="stage-star" />
+                </ui:VisualElement>
+                <ui:Label name="stage-cell-17-number" text="18" class="stage-cell-number" />
+            </ui:VisualElement>
+            <ui:VisualElement name="stage-cell-18" class="stage-cell">
+                <ui:VisualElement name="stage-cell-18-tab" class="stage-cell-stars">
+                    <ui:VisualElement name="stage-cell-18-star-0" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-18-star-1" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-18-star-2" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-18-star-3" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-18-star-4" class="stage-star" />
+                </ui:VisualElement>
+                <ui:Label name="stage-cell-18-number" text="19" class="stage-cell-number" />
+            </ui:VisualElement>
+            <ui:VisualElement name="stage-cell-19" class="stage-cell">
+                <ui:VisualElement name="stage-cell-19-tab" class="stage-cell-stars">
+                    <ui:VisualElement name="stage-cell-19-star-0" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-19-star-1" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-19-star-2" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-19-star-3" class="stage-star" />
+                    <ui:VisualElement name="stage-cell-19-star-4" class="stage-star" />
+                </ui:VisualElement>
+                <ui:Label name="stage-cell-19-number" text="20" class="stage-cell-number" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Button name="prev-page-button" text="" class="stage-nav-arrow" />
+        <ui:Button name="next-page-button" text="" class="stage-nav-arrow" />
+    </ui:VisualElement>
+</ui:UXML>

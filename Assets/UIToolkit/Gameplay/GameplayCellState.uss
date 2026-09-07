@@ -1,0 +1,19 @@
+.gameplay-cell-states {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    height: 24px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameplay-cell-state {
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 12px;
+    visibility: hidden;
+}

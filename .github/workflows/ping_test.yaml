@@ -1,0 +1,15 @@
+# name: Ping Test
+# run-name: ${{ gitea.actor }} is testing out Gitea Actions 🚀
+# on: [push]
+
+# jobs:
+#   Explore-Gitea-Actions:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Install ping tool
+#         run: |
+#           apt-get update
+#           apt-get install -y iputils-ping dnsutils curl
+#       - name: Ping Test
+#         run: |
+#           ping -c 4 http://gitea:3000

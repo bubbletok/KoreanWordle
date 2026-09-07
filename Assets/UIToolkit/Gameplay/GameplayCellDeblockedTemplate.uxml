@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="cell-root" class="gameplay-cell">
+        <ui:Label name="cell-text" text="" class="gameplay-cell-text" />
+    </ui:VisualElement>
+</ui:UXML>

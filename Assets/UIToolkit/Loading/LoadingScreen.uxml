@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="/Assets/UIToolkit/Loading/Loading.uss" />
+    <ui:VisualElement name="loading-root" class="loading-root">
+        <ui:VisualElement class="loading-panel">
+            <ui:ProgressBar name="progress-bar" title="0%" low-value="0" high-value="1" class="loading-progress" />
+            <ui:Label name="status-label" text="" class="loading-status" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

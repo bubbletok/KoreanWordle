@@ -1,0 +1,51 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UIToolkit/Popup/Popup.uss?fileID=7433441132597879392&amp;guid=fcae16245ce5fac49ae949f8cacbc1d5&amp;type=3#Popup" />
+    <ui:VisualElement name="tutorial-popup-blocked" class="popup">
+        <ui:VisualElement class="popup-panel" style="padding-top: 84px;">
+            <ui:Label text="숨겨진 단어를 힌트를 통해 유추!" class="popup-title" style="font-size: 50px; margin-bottom: 24px;" />
+            <ui:VisualElement class="tutorial-hero">
+                <ui:VisualElement class="tutorial-hero-cell">
+                    <ui:Label text="김" class="tutorial-hero-text" />
+                </ui:VisualElement>
+                <ui:VisualElement class="tutorial-hero-dots">
+                    <ui:VisualElement class="tutorial-hero-dot" />
+                    <ui:VisualElement class="tutorial-hero-dot" />
+                    <ui:VisualElement class="tutorial-hero-dot" />
+                </ui:VisualElement>
+                <ui:VisualElement class="tutorial-hero-labels">
+                    <ui:Label text="초성" class="tutorial-hero-label" />
+                    <ui:Label text="중성" class="tutorial-hero-label" />
+                    <ui:Label text="종성" class="tutorial-hero-label" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="tutorial-example-row">
+                <ui:VisualElement class="tutorial-example-cell tutorial-color-not-in-word">
+                    <ui:Label text="김" class="tutorial-example-cell-text" />
+                </ui:VisualElement>
+                <ui:VisualElement style="flex-grow: 1;">
+                    <ui:Label text="빨강은 해당 자모가 단어에 없다는 뜻입니다.&#10;단어에 종성이 없어도 회색으로 나타납니다." class="tutorial-example-text" />
+                    <ui:Label text="정답 단어 -약&#10;입력 단어 -김" class="tutorial-example-answer" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="tutorial-example-row">
+                <ui:VisualElement class="tutorial-example-cell tutorial-color-wrong-position">
+                    <ui:Label text="김" class="tutorial-example-cell-text" />
+                </ui:VisualElement>
+                <ui:VisualElement style="flex-grow: 1;">
+                    <ui:Label text="노랑은 해당 자모가 단어에 있으나&#10;위치가 틀리다는 뜻입니다." class="tutorial-example-text" />
+                    <ui:Label text="정답 단어 - 감기&#10;입력 단어 - 김밥" class="tutorial-example-answer" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="tutorial-example-row">
+                <ui:VisualElement class="tutorial-example-cell tutorial-color-correct">
+                    <ui:Label text="김" class="tutorial-example-cell-text" />
+                </ui:VisualElement>
+                <ui:VisualElement style="flex-grow: 1;">
+                    <ui:Label text="초록은 해당 자모가 단어에 있고&#10;위치도 올바르다는 뜻입니다." class="tutorial-example-text" />
+                    <ui:Label text="정답 단어 -김&#10;입력 단어 -김" class="tutorial-example-answer" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Button name="close-button" text="X" class="popup-close-button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

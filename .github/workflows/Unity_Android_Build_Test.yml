@@ -1,0 +1,139 @@
+# name: Build Unity (Android)
+
+# on:
+#   push:
+#     branches:
+#       [main]
+
+# # ▼▼▼ 여기에 Unity 버전과 Docker 이미지를 변수로 정의합니다 ▼▼▼
+# env:
+#   UNITY_VERSION: 2022.3.22f1
+#   # Game-CI Docker Hub에서 사용 가능한 전체 이미지 이름
+#   DOCKER_IMAGE: unityci/editor:ubuntu-2022.3.22f1-android-3
+
+# jobs:
+#   # # JOB 1: 스토어 출시를 위한 .aab 빌드
+#   # build_aab_release:
+#   #   name: Build Android (AAB Release)
+#   #   runs-on: ubuntu-latest
+    
+#   #   steps:
+#   #   - name: Checkout repository
+#   #     uses: actions/checkout@v4
+#   #     with:
+#   #       fetch-depth: 0
+#   #       lfs: true
+    
+#   #   - name: Git LFS fetch
+#   #     run: git lfs pull
+
+#   #   # 참고: 만약 'ETIMEDOUT' 캐시 오류가 계속 발생한다면,
+#   #   # Act Runner 컨테이너가 Gitea 인스턴스(Cache 서버)에 접근할 수 있도록
+#   #   # Docker 네트워크나 방화벽 설정을 확인해야 할 수 있습니다.
+#   #   - name: Restore Unity Library from Cache
+#   #     uses: actions/cache@v3
+#   #     with:
+#   #       path: Library
+#   #       key: Library-AAB-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+#   #       restore-keys: |
+#   #         Library-AAB-
+
+#   #   - name: Prepare Build Directory for AAB
+#   #     run: |
+#   #       mkdir -p /home/runner/build_workspace_aab
+#   #       cp -r . /home/runner/build_workspace_aab
+
+#   #   # ▼▼▼ 각 줄 끝에 백슬래시(\)를 추가하여 스크립트 안정성 확보 ▼▼▼
+#   #   - name: Unity Build (Manual Docker Run)
+#   #     run: |
+#   #       docker run --rm \
+#   #         --workdir /github/workspace \
+#   #         -v /home/runner/build_workspace_aab:/github/workspace \
+#   #         -e UNITY_LICENSE="${{ secrets.UNITY_LICENSE }}" \
+#   #         -e UNITY_EMAIL="${{ secrets.UNITY_EMAIL }}" \
+#   #         -e UNITY_PASSWORD="${{ secrets.UNITY_PASSWORD }}" \
+#   #         -e UNITY_VERSION="${{ env.UNITY_VERSION }}" \
+#   #         -e BUILD_TARGET="Android" \
+#   #         -e BUILD_NAME="Korean_Wordle_Release" \
+#   #         -e BUILD_PATH="build/Android" \
+#   #         -e ANDROID_APP_BUNDLE="true" \
+#   #         -e VERSION="1.0.${{ github.run_number }}" \
+#   #         -e ANDROID_VERSION_CODE="${{ github.run_number }}" \
+#   #         -e ANDROID_KEYSTORE_BASE64="${{ secrets.ANDROID_KEYSTORE_BASE64 }}" \
+#   #         -e ANDROID_KEYSTORE_PASS="${{ secrets.ANDROID_KEYSTORE_PASS }}" \
+#   #         -e ANDROID_KEY_ALIAS_NAME="${{ secrets.ANDROID_KEY_ALIAS_NAME }}" \
+#   #         -e ANDROID_KEY_ALIAS_PASS="${{ secrets.ANDROID_KEY_ALIAS_PASS }}" \
+#   #         ${{ env.DOCKER_IMAGE }}
+    
+#   #   - name: Preserve Library for Caching
+#   #     if: always()
+#   #     run: |
+#   #       if [ -d "/home/runner/build_workspace_aab/Library" ]; then
+#   #         rm -rf ${{ github.workspace }}/Library
+#   #         cp -r /home/runner/build_workspace_aab/Library ${{ github.workspace }}/Library
+#   #       fi
+
+#   #   - name: Upload Build File (AAB)
+#   #     uses: actions/upload-artifact@v4
+#   #     with:
+#   #       name: Build-Android-AAB
+#   #       path: /home/runner/build_workspace_aab/build/Android/*.aab
+
+#   # JOB 2: 테스트를 위한 .apk 빌드
+#   build_apk_debug:
+#     name: Build Android (APK Debug)
+#     runs-on: ubuntu-latest
+    
+#     steps:
+#     - name: Checkout repository
+#       uses: actions/checkout@v4
+#       with:
+#         fetch-depth: 0
+#         lfs: true
+    
+#     - name: Git LFS fetch
+#       run: git lfs pull
+
+#     - name: Restore Unity Library from Cache
+#       uses: actions/cache@v3
+#       with:
+#         path: Library
+#         key: Library-APK-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+#         restore-keys: |
+#           Library-APK-
+
+#     - name: Prepare Build Directory for APK
+#       run: |
+#         mkdir -p /home/runner/build_workspace_apk
+#         cp -r . /home/runner/build_workspace_apk
+
+#     # ▼▼▼ 각 줄 끝에 백슬래시(\)를 추가하여 스크립트 안정성 확보 ▼▼▼
+#     - name: Unity Build (Manual Docker Run)
+#       run: |
+#         docker run --rm \
+#           --workdir /github/workspace \
+#           -v /home/runner/build_workspace_apk:/github/workspace \
+#           -e UNITY_LICENSE="${{ secrets.UNITY_LICENSE }}" \
+#           -e UNITY_EMAIL="${{ secrets.UNITY_EMAIL }}" \
+#           -e UNITY_PASSWORD="${{ secrets.UNITY_PASSWORD }}" \
+#           -e UNITY_VERSION="${{ env.UNITY_VERSION }}" \
+#           -e BUILD_TARGET="Android" \
+#           -e BUILD_NAME="Korean_Wordle_Debug" \
+#           -e BUILD_PATH="build/Android" \
+#           -e ANDROID_APP_BUNDLE="false" \
+#           ${{ env.DOCKER_IMAGE }}
+
+#     - name: Preserve Library for Caching
+#       if: always()
+#       run: |
+#         if [ -d "/home/runner/build_workspace_apk/Library" ]; then
+#           rm -rf ${{ github.workspace }}/Library
+#           cp -r /home/runner/build_workspace_apk/Library ${{ github.workspace }}/Library
+#         fi
+
+#     - name: Upload Build File (APK)
+#       uses: actions/upload-artifact@v4
+#       with:
+#         name: Build-Android-APK
+#         path: /home/runner/build_workspace_apk/build/Android/*.apk
+

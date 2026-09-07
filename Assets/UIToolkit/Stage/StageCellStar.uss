@@ -1,0 +1,20 @@
+.stage-cell-stars {
+    position: absolute;
+    top: -42px;
+    left: 4px;
+    right: 4px;
+    height: 32px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.stage-star {
+    width: 26px;
+    height: 26px;
+    margin-left: 3px;
+    margin-right: 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    display: none;
+}

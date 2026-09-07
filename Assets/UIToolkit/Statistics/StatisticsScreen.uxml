@@ -1,0 +1,121 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="/Assets/UIToolkit/Statistics/Statistics.uss" />
+    <ui:VisualElement name="statistics-root" class="stats-root">
+        <ui:Button name="back-button" text="" class="stats-back-button" />
+        <ui:Label text="통계" class="stats-title" />
+
+        <ui:VisualElement name="stats-content" class="stats-content">
+            <ui:VisualElement class="stats-header">
+                <ui:Button name="blocked-tab-button" text="모아쓰기 탭" class="stats-tab-button" />
+                <ui:Button name="deblocked-tab-button" text="풀어쓰기 탭" class="stats-tab-button" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="stats-panel">
+                <ui:VisualElement class="stats-chip"><ui:Label text="전체 통계" class="stats-chip-label" /></ui:VisualElement>
+                <ui:VisualElement class="stats-box">
+                    <ui:VisualElement class="stats-overall-row">
+                        <ui:Label text="총 플레이 횟수:" class="stats-overall-label" />
+                        <ui:Label name="total-attempts-label" text="0회" class="stats-overall-value" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="stats-overall-row">
+                        <ui:Label text="클리어 횟수:" class="stats-overall-label" />
+                        <ui:Label name="total-clears-label" text="0회" class="stats-overall-value" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="stats-overall-row">
+                        <ui:Label text="승률:" class="stats-overall-label" />
+                        <ui:Label name="win-rate-label" text="0%" class="stats-overall-value" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="stats-overall-row">
+                        <ui:Label text="평균 시도:" class="stats-overall-label" />
+                        <ui:Label name="average-attempts-label" text="-" class="stats-overall-value" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement class="stats-panel">
+                <ui:VisualElement class="stats-chip"><ui:Label text="시도 횟수별 분포" class="stats-chip-label" /></ui:VisualElement>
+                <ui:VisualElement class="stats-box bar-graph">
+                    <ui:VisualElement class="bar-row">
+                        <ui:Label text="1회" class="bar-row-label" />
+                        <ui:VisualElement class="bar-track"><ui:VisualElement name="bar-fill-0" class="bar-fill" /></ui:VisualElement>
+                        <ui:Label name="bar-count-0" text="0" class="bar-row-count" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="bar-row">
+                        <ui:Label text="2회" class="bar-row-label" />
+                        <ui:VisualElement class="bar-track"><ui:VisualElement name="bar-fill-1" class="bar-fill" /></ui:VisualElement>
+                        <ui:Label name="bar-count-1" text="0" class="bar-row-count" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="bar-row">
+                        <ui:Label text="3회" class="bar-row-label" />
+                        <ui:VisualElement class="bar-track"><ui:VisualElement name="bar-fill-2" class="bar-fill" /></ui:VisualElement>
+                        <ui:Label name="bar-count-2" text="0" class="bar-row-count" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="bar-row">
+                        <ui:Label text="4회" class="bar-row-label" />
+                        <ui:VisualElement class="bar-track"><ui:VisualElement name="bar-fill-3" class="bar-fill" /></ui:VisualElement>
+                        <ui:Label name="bar-count-3" text="0" class="bar-row-count" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="bar-row">
+                        <ui:Label text="5회" class="bar-row-label" />
+                        <ui:VisualElement class="bar-track"><ui:VisualElement name="bar-fill-4" class="bar-fill" /></ui:VisualElement>
+                        <ui:Label name="bar-count-4" text="0" class="bar-row-count" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="bar-row">
+                        <ui:Label text="6회" class="bar-row-label" />
+                        <ui:VisualElement class="bar-track"><ui:VisualElement name="bar-fill-5" class="bar-fill" /></ui:VisualElement>
+                        <ui:Label name="bar-count-5" text="0" class="bar-row-count" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="bar-row">
+                        <ui:Label text="실패" class="bar-row-label" />
+                        <ui:VisualElement class="bar-track"><ui:VisualElement name="bar-fill-6" class="bar-fill" /></ui:VisualElement>
+                        <ui:Label name="bar-count-6" text="0" class="bar-row-count" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement class="stats-panel">
+                <ui:VisualElement class="stats-chip"><ui:Label text="품사별 클리어 현황" class="stats-chip-label" /></ui:VisualElement>
+                <ui:VisualElement class="stats-box stage-stat-list">
+                    <ui:VisualElement class="stage-stat-row">
+                        <ui:Label text="명사" class="stage-stat-name" />
+                        <ui:VisualElement class="stage-stat-track"><ui:VisualElement name="stage-stat-fill-0" class="stage-stat-fill" /></ui:VisualElement>
+                        <ui:Label name="stage-stat-progress-0" text="0 / 0" class="stage-stat-progress" />
+                        <ui:Label name="stage-stat-rate-0" text="0%" class="stage-stat-rate" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="stage-stat-row">
+                        <ui:Label text="대명사" class="stage-stat-name" />
+                        <ui:VisualElement class="stage-stat-track"><ui:VisualElement name="stage-stat-fill-1" class="stage-stat-fill" /></ui:VisualElement>
+                        <ui:Label name="stage-stat-progress-1" text="0 / 0" class="stage-stat-progress" />
+                        <ui:Label name="stage-stat-rate-1" text="0%" class="stage-stat-rate" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="stage-stat-row">
+                        <ui:Label text="수사" class="stage-stat-name" />
+                        <ui:VisualElement class="stage-stat-track"><ui:VisualElement name="stage-stat-fill-2" class="stage-stat-fill" /></ui:VisualElement>
+                        <ui:Label name="stage-stat-progress-2" text="0 / 0" class="stage-stat-progress" />
+                        <ui:Label name="stage-stat-rate-2" text="0%" class="stage-stat-rate" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="stage-stat-row">
+                        <ui:Label text="동사" class="stage-stat-name" />
+                        <ui:VisualElement class="stage-stat-track"><ui:VisualElement name="stage-stat-fill-3" class="stage-stat-fill" /></ui:VisualElement>
+                        <ui:Label name="stage-stat-progress-3" text="0 / 0" class="stage-stat-progress" />
+                        <ui:Label name="stage-stat-rate-3" text="0%" class="stage-stat-rate" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="stage-stat-row">
+                        <ui:Label text="형용사" class="stage-stat-name" />
+                        <ui:VisualElement class="stage-stat-track"><ui:VisualElement name="stage-stat-fill-4" class="stage-stat-fill" /></ui:VisualElement>
+                        <ui:Label name="stage-stat-progress-4" text="0 / 0" class="stage-stat-progress" />
+                        <ui:Label name="stage-stat-rate-4" text="0%" class="stage-stat-rate" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="stage-stat-row">
+                        <ui:Label text="부사" class="stage-stat-name" />
+                        <ui:VisualElement class="stage-stat-track"><ui:VisualElement name="stage-stat-fill-5" class="stage-stat-fill" /></ui:VisualElement>
+                        <ui:Label name="stage-stat-progress-5" text="0 / 0" class="stage-stat-progress" />
+                        <ui:Label name="stage-stat-rate-5" text="0%" class="stage-stat-rate" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:Button name="reset-data-button" text="데이터 초기화" class="stats-reset-button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

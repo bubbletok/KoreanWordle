@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0753a4005cce88409361bfc700a842d, type: 3}
+  m_Name: GameplaySettings
+  m_EditorClassIdentifier: 
+  MaxAttempts: 6
+  MaxWordLength: 5
+  MaxGameTypes: 8
+  StagesPerPage: 20
+  MaxStagePages: 20
+  StageGridColumns: 4
+  StageGridRows: 5
+  MaxStages: 50000
+  MaxWordIndex: 50000
+  DailyResetHour: 6
+  EncryptionOffset: 214743673
+  SaveFileName: savefile.json
+  CorrectColor: {r: 0.45882353, g: 0.70980394, b: 0.9647059, a: 1}
+  WrongPositionColor: {r: 0.96862745, g: 0.85882354, b: 0.49019608, a: 1}
+  NotInWordColor: {r: 0.89411765, g: 0.38039216, b: 0.36078432, a: 1}
+  DefaultCellColor: {r: 1, g: 1, b: 1, a: 1}

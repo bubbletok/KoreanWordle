@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="/Assets/UIToolkit/Popup/Popup.uss" />
+    <ui:VisualElement name="game-result-popup" class="popup">
+        <ui:VisualElement class="popup-panel">
+            <ui:Label name="title-label" text="" class="popup-title" />
+            <ui:Label name="answer-label" text="" class="popup-message" />
+            <ui:Label name="explanation-label" text="" class="popup-message" />
+            <ui:VisualElement class="popup-button-row">
+                <ui:Button name="return-button" text="돌아가기" class="popup-button" />
+                <ui:Button name="next-stage-button" text="다음 스테이지" class="popup-button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

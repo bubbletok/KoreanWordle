@@ -1,0 +1,114 @@
+.stage-select-root {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(41, 46, 68);
+}
+
+.stage-back-button {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    width: 120px;
+    height: 120px;
+    border-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("project://database/Assets/Sprites/BackButton.png?fileID=21300000&guid=03ddcfbe92632704d81e9614ce789f10&type=3#BackButton");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.stage-back-button:hover {
+    scale: 1.1 1.1;
+}
+
+.stage-title {
+    position: absolute;
+    top: 315px;
+    left: 0;
+    right: 0;
+    font-size: 180px;
+    color: rgb(255, 255, 255);
+    -unity-text-align: upper-center;
+    -unity-font-definition: url("project://database/Assets/Fonts/BMJUA_otf.otf?fileID=12800000&guid=5e3d8c9224831014c9c346b3f94ba075&type=3#BMJUA_otf");
+}
+
+.stage-subtitle {
+    position: absolute;
+    top: 600px;
+    left: 0;
+    right: 0;
+    font-size: 120px;
+    color: rgb(255, 255, 255);
+    -unity-text-align: upper-center;
+    -unity-font-definition: url("project://database/Assets/Fonts/BMJUA_otf.otf?fileID=12800000&guid=5e3d8c9224831014c9c346b3f94ba075&type=3#BMJUA_otf");
+}
+
+.stage-grid-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -350px;
+    align-items: center;
+}
+
+.stage-select-row {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.stage-cell {
+    width: 180px;
+    height: 180px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 37px;
+    margin-bottom: 37px;
+    background-image: none;
+    background-color: rgb(80, 88, 127);
+    border-radius: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.stage-cell:hover {
+    scale: 1.03 1.03;
+}
+
+.stage-cell--disabled {
+    opacity: 0.6;
+}
+
+.stage-cell-number {
+    font-size: 56px;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+    -unity-font-definition: url("project://database/Assets/Fonts/BMJUA_otf.otf?fileID=12800000&guid=5e3d8c9224831014c9c346b3f94ba075&type=3#BMJUA_otf");
+}
+
+.stage-nav-arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: 175px;
+    width: 50px;
+    height: 150px;
+    border-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.stage-nav-arrow:hover {
+    scale: 1.1 1.1;
+}
+
+#prev-page-button {
+    left: 20px;
+    background-image: url("project://database/Assets/Sprites/PrevButton.png?fileID=21300000&guid=c0122ccea5c013f489d9e58f15e92a48&type=3#PrevButton");
+}
+
+#next-page-button {
+    right: 20px;
+    background-image: url("project://database/Assets/Sprites/NextButton.png?fileID=21300000&guid=3939adbcc95f00a45b536c5abf13a9c7&type=3#NextButton");
+}

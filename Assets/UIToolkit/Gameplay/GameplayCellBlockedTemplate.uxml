@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="cell-root" class="gameplay-cell">
+        <ui:Label name="cell-text" text="" class="gameplay-cell-text" />
+        <ui:VisualElement class="gameplay-cell-states">
+            <ui:VisualElement name="cell-cho" class="gameplay-cell-state" />
+            <ui:VisualElement name="cell-jung" class="gameplay-cell-state" />
+            <ui:VisualElement name="cell-jong" class="gameplay-cell-state" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

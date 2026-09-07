@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adb9c12a8c6c949f7af83a3d238359d0, type: 3}
+  m_Name: vFolders Data
+  m_EditorClassIdentifier: 
+  folderDatas_byGuid:
+    keys: []
+    values: []
+  bookmarks:
+  - guid: 5a605b95aa31e804796b9dcc429e9c4b
+  - guid: b11f11d6324ed3f4dafcb2d87483568f
+  - guid: df34f632c58c7d442afa5d23a57ec66c
+  - guid: 8a28b79d2944b9d4ba12032fcc1791ef
+  - guid: 6df06d4416c267144bfd1e28a9ce410a
+  - guid: 68240e9711050b34094d8de6a12001a6

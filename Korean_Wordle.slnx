@@ -1,0 +1,7 @@
+﻿<Solution>
+  <Project Path="KW.Runtime.csproj" />
+  <Project Path="KW.Editor.csproj" />
+  <Project Path="VFolders.csproj" />
+  <Project Path="DOTween.Modules.csproj" />
+  <Project Path="KW.Tests.csproj" />
+</Solution>

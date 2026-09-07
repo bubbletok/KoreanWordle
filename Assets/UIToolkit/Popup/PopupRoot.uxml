@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="/Assets/UIToolkit/Popup/Popup.uss" />
+    <ui:VisualElement name="popup-layer" class="popup-layer" picking-mode="Ignore" />
+</ui:UXML>
